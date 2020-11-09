@@ -1,0 +1,1613 @@
+@import "./reset.css";
+:root {
+  font-size: 10px;
+}
+
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+header {
+  width: 100vw;
+}
+header .wrapper {
+  max-width: 117rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+header .logo-link {
+  width: 100%;
+  outline: none;
+}
+header .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+header .social_language-lang {
+  display: inline-block;
+  margin-right: 0.8rem;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+header .social_language-select {
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: normal;
+  border: none;
+  outline: none;
+}
+header .social_language-select:hover {
+  cursor: pointer;
+}
+header .social_language-select-option {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: normal;
+  background: #FFFFFF;
+}
+header .social_eye {
+  margin: 0 19.5rem 0 43.1rem;
+}
+header .social_eye-link {
+  outline: none;
+}
+header .social_networks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+header .social_networks .phone {
+  margin-right: 1.5rem;
+}
+header .social_networks .phone-2 {
+  margin-left: 1.5rem;
+}
+header .social_networks .icon-img {
+  margin-right: 1rem;
+}
+header .social_networks .phone-num {
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+header .social_networks-item {
+  height: 100%;
+  margin: 0;
+}
+header .social_networks-link {
+  display: block;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Commissioner", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  width: 100%;
+  height: 100%;
+}
+header .social_networks-link img {
+  display: block;
+}
+header .social_networks .last-li-absolute {
+  position: absolute;
+  right: -5.6rem;
+}
+header .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .navigation .menu-list {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+header .navigation .menu-list-item {
+  height: 100%;
+  margin: 0 2.5rem;
+  margin-bottom: 0.8rem;
+}
+header .navigation .menu-list .last-li {
+  margin-right: 1rem;
+}
+header .navigation .menu-list .last-li-absolute {
+  position: absolute;
+  right: -8.6rem;
+}
+header .navigation .menu-list-link {
+  display: block;
+  color: rgba(0, 0, 0, 0.75);
+  font-family: "Commissioner", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+header .navigation .menu-list-link img {
+  display: block;
+}
+
+main {
+  width: 100vw;
+}
+main .main-screen .wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: space-between;
+  position: relative;
+}
+main .main-screen .carousel-item {
+  position: relative;
+}
+main .main-screen .carousel-item-content {
+  position: absolute;
+  top: 16rem;
+  left: 37.5rem;
+  max-width: 57rem;
+  text-align: left;
+}
+main .main-screen .carousel-img {
+  width: 100%;
+}
+main .main-screen .content-title {
+  font-family: "Commissioner", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 4rem;
+  line-height: 5rem;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.9);
+  margin-bottom: 2rem;
+}
+main .main-screen .content-subtitle {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 5rem;
+}
+main .main-screen .main-button {
+  width: 200px;
+  height: 45px;
+  font-family: "Commissioner", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 3rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #DEC377;
+  border-radius: 0.2rem;
+  border: 0;
+}
+main .main-screen .main-button:hover {
+  cursor: pointer;
+  background: rgba(222, 195, 119, 0.75);
+}
+main .main-screen .advantages {
+  padding: 0 37.5rem;
+  position: absolute;
+  bottom: -19.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+main .main-screen .advantages-card {
+  margin: 0 1.5rem;
+  padding: 5rem 2rem 4rem;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+}
+main .main-screen .advantages-card-container-icon {
+  margin: 0 auto 2.5rem;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+main .main-screen .advantages-card-container-icon-img {
+  top: 50%;
+  transform: translate(50%, 50%);
+}
+main .main-screen .advantages-card-subtitle {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.75);
+  width: 23rem;
+  text-align: center;
+}
+main .main-screen .advantages-card:first-child {
+  margin-left: 0;
+}
+main .main-screen .advantages-card:last-child {
+  margin-right: 0;
+}
+main .main-screen .introduction .wrapper {
+  max-width: 117rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: space-between;
+  position: relative;
+}
+main #main-slider > button.slick-prev {
+  position: absolute;
+  bottom: 120px;
+  left: 399px;
+  z-index: 2;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+main #main-slider > button.slick-next {
+  position: absolute;
+  bottom: 120px;
+  left: 453px;
+  transform: rotate(180deg);
+  width: 1.8rem;
+  height: 1.8rem;
+}
+main .introduction {
+  background: #E5E5E5;
+}
+main .introduction .wrapper {
+  max-width: 117rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 29.5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+main .introduction-content {
+  padding: 5rem 6rem 6rem 7rem;
+  background-color: #FFFFFF;
+}
+main .introduction-title {
+  margin-bottom: 3rem;
+  font-family: "Commissioner", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.8rem;
+  line-height: 4rem;
+  letter-spacing: 0.03em;
+  color: rgba(0, 0, 0, 0.9);
+}
+main .introduction-text {
+  margin-bottom: 2.5rem;
+  padding-right: 7rem;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+main .introduction-text-last {
+  margin-bottom: 0;
+}
+main .main-directions {
+  background: #E5E5E5;
+}
+main .main-directions .wrapper {
+  max-width: 117rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 5rem 0 5rem;
+}
+main .main-directions-title {
+  margin-bottom: 3.5rem;
+  font-family: "Commissioner", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.8rem;
+  line-height: 4rem;
+  letter-spacing: 0.03em;
+  color: rgba(0, 0, 0, 0.9);
+}
+main .main-directions-services {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .main-directions-services-card {
+  margin-bottom: 3rem;
+  padding: 1.5rem 1.5rem 2.5rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+main .main-directions-services-card-content {
+  padding-top: 1rem;
+  width: 18rem;
+  margin-right: 5.5rem;
+}
+main .main-directions-services-card-content h5 {
+  font-family: "Commissioner", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: rgba(0, 0, 0, 0.9);
+}
+main .main-directions-services-card-content a {
+  display: inline-block;
+  margin-top: 10px;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+}
+main .main-directions-services-card-content .link-marg {
+  margin-top: 40px;
+}
+main .main-directions-button {
+  width: 20rem;
+  height: 4.5rem;
+  border: none;
+  outline: none;
+  background: #DEC377;
+  border-radius: 2px;
+  font-family: "Commissioner", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 3rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+main .main-directions-button:hover {
+  cursor: pointer;
+  background: rgba(222, 195, 119, 0.75);
+}
+main .work-principles {
+  position: relative;
+  width: 100vw;
+  max-height: 76rem;
+  background: #E5E5E5;
+}
+main .work-principles .wrapper {
+  max-width: 117rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+main .work-principles-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+main .work-principles-title {
+  margin: 0 3rem 0 0;
+  font-family: "Commissioner", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.8rem;
+  line-height: 4rem;
+  letter-spacing: 0.03em;
+  color: rgba(0, 0, 0, 0.9);
+}
+main .work-principles-content {
+  margin-bottom: 3.5rem;
+  max-width: 77rem;
+}
+main .work-principles-content p {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+main .work-principles-content p:first-child {
+  margin-bottom: 2.5rem;
+}
+main .work-principles-slider {
+  position: relative;
+}
+main .work-principles-slider .work-principl-img {
+  width: 117rem;
+  z-index: 5;
+}
+main #work-principles-slider > button.slick-prev {
+  position: absolute;
+  bottom: 265px;
+  left: -60px;
+  z-index: 2;
+  width: 2.5rem;
+  height: 3rem;
+}
+main #work-principles-slider > button.slick-next {
+  position: absolute;
+  bottom: 265px;
+  right: -60px;
+  transform: rotate(180deg);
+  z-index: 20;
+  width: 2.5rem;
+  height: 3rem;
+}
+main .partner-reviews {
+  padding: 21rem 0 10.5rem 0;
+}
+main .partner-reviews .wrapper {
+  max-width: 117rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+main .partner-reviews-title {
+  margin: 0 0 3.5rem 0;
+  font-family: "Commissioner", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.8rem;
+  line-height: 4rem;
+  letter-spacing: 0.03em;
+  color: rgba(0, 0, 0, 0.9);
+}
+main .partner-reviews-slider {
+  margin-bottom: 3rem;
+}
+main .partner-reviews-slider .partner-review {
+  max-width: 57rem;
+  text-align: left;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+}
+main .partner-reviews-slider .partner-review-img {
+  display: inline-block;
+  margin-bottom: 4rem;
+}
+main .partner-reviews-slider .partner-review-content {
+  padding: 0 5rem 6.5rem 5rem;
+}
+main .partner-reviews-slider .partner-review-person {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+main .partner-reviews-slider .partner-review-name {
+  margin-bottom: 2rem;
+  font-family: "Commissioner", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.6rem;
+  line-height: 4rem;
+  letter-spacing: 0.01em;
+  color: #DEC377;
+}
+main .partner-reviews-slider .partner-review-text {
+  margin-bottom: 2.5rem;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.8);
+}
+main .partner-reviews-slider .partner-review-link {
+  margin-bottom: 2rem;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+}
+main .partner-reviews-button {
+  width: 20rem;
+  height: 4.5rem;
+  font-family: "Commissioner", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 3rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #DEC377;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+}
+main .partner-reviews-button:hover {
+  cursor: pointer;
+  background: rgba(222, 195, 119, 0.75);
+}
+main #partner-reviews-slider > button.slick-prev {
+  position: absolute;
+  bottom: -70px;
+  right: 83px;
+  z-index: 2;
+  width: 1rem;
+  height: 3rem;
+}
+main #partner-reviews-slider > button.slick-next {
+  position: absolute;
+  bottom: -60px;
+  right: 23px;
+  transform: rotate(180deg);
+  z-index: 2;
+  width: 1rem;
+  height: 3rem;
+}
+main .clients .wrapper {
+  max-width: 117rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 0 10rem 0;
+}
+main .clients-content {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 4rem;
+}
+main .clients-content-text {
+  margin: 0 10rem 0 0;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: rgba(0, 0, 0, 0.8);
+  max-width: 67rem;
+}
+main .clients-content-button {
+  width: 20rem;
+  height: 4.5rem;
+  font-family: "Commissioner", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 3rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #DEC377;
+  background-color: #FFFFFF;
+  box-shadow: inset 0 0 0 2px #DEC377;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+}
+main .clients-content-button:hover {
+  cursor: pointer;
+  color: rgba(222, 195, 119, 0.75);
+}
+main .clients-images {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  mix-blend-mode: luminosity;
+}
+main .clients-images img {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  mix-blend-mode: luminosity;
+}
+main .triangle {
+  background-color: #E5E5E5;
+}
+main .triangle .wrapper {
+  max-width: 117rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 8rem 0 10rem 0;
+}
+main .triangle-top {
+  display: flex;
+  margin-bottom: 3rem;
+}
+main .triangle-top-left {
+  box-sizing: border-box;
+  margin-right: 1.5rem;
+  padding: 4rem 5rem 5.5rem 5rem;
+  max-width: 57rem;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+main .triangle-top-right {
+  box-sizing: border-box;
+  margin-left: 1.5rem;
+  padding: 4rem 5rem 5.5rem 5rem;
+  max-width: 57rem;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+main .triangle-top-right-rectangle {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+main .triangle-top h4 {
+  margin: 0 0 1.5rem 0;
+  font-family: "Commissioner", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.6rem;
+  line-height: 4.5rem;
+  color: rgba(0, 0, 0, 0.9);
+  max-width: 45rem;
+}
+main .triangle-top p {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+main .triangle-bottom {
+  padding: 3.5rem 5rem 4.5rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+main .triangle-bottom h4 {
+  margin: 0 10rem 0 0;
+  font-family: "Commissioner", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.6rem;
+  line-height: 4.5rem;
+  color: rgba(0, 0, 0, 0.9);
+  max-width: 32rem;
+}
+main .triangle-bottom p {
+  padding-top: 0.5rem;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: rgba(0, 0, 0, 0.8);
+  max-width: 72rem;
+}
+main .services {
+  background-color: #E5E5E5;
+}
+main .services .wrapper {
+  max-width: 117rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 8rem 0 10rem 0;
+}
+main .services-title {
+  margin: 0 0 3.5rem 0;
+  font-family: "Commissioner", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.8rem;
+  line-height: 4rem;
+  letter-spacing: 0.03em;
+  color: rgba(0, 0, 0, 0.9);
+}
+main .services-container {
+  margin-bottom: 5rem;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 140px 140px 140px 140px 140px;
+  grid-template-columns: 470px 1fr 1fr 470px;
+  grid-gap: 3rem;
+}
+main .services-container div {
+  padding: 2.5rem 3rem 0 10rem;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+}
+main .services-container h5 {
+  margin: 0 0 4.5rem 0;
+  font-family: "Commissioner", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: rgba(0, 0, 0, 0.9);
+}
+main .services-container a {
+  display: block;
+  text-align: right;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+}
+main .services-container-item-1 {
+  grid-column: 1/2;
+  box-shadow: inset 7rem 0 0 0 rgba(222, 195, 119, 0.4);
+}
+main .services-container-item-2 {
+  grid-column: 2/5;
+  box-shadow: inset 7rem 0 0 0 rgba(222, 195, 119, 0.4);
+}
+main .services-container-item-3 {
+  grid-column: 1/3;
+  box-shadow: inset 7rem 0 0 0 rgba(222, 195, 119, 0.75);
+}
+main .services-container-item-4 {
+  grid-column: 3/5;
+  box-shadow: inset 7rem 0 0 0 rgba(222, 195, 119, 0.75);
+}
+main .services-container-item-5 {
+  grid-column: 1/4;
+  box-shadow: inset 7rem 0 0 0 #DEC377;
+}
+main .services-container-item-5 h5 {
+  margin: 0 0 1.5rem 0;
+}
+main .services-container-item-5 a {
+  margin: 0 0 2rem 0;
+}
+main .services-container-item-6 {
+  grid-column: 4/5;
+  box-shadow: inset 7rem 0 0 0 #DEC377;
+}
+main .services-container-item-7 {
+  grid-column: 1/3;
+  box-shadow: inset 7rem 0 0 0 rgba(222, 195, 119, 0.75);
+}
+main .services-container-item-8 {
+  grid-column: 3/5;
+  box-shadow: inset 7rem 0 0 0 rgba(222, 195, 119, 0.75);
+}
+main .services-container-item-9 {
+  grid-column: 1/2;
+  box-shadow: inset 7rem 0 0 0 rgba(222, 195, 119, 0.4);
+}
+main .services-container-item-10 {
+  grid-column: 2/5;
+  box-shadow: inset 7rem 0 0 0 rgba(222, 195, 119, 0.4);
+}
+main .services-describe {
+  display: flex;
+  justify-content: space-between;
+}
+main .services-describe-text {
+  max-width: 77rem;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+main .services-describe-button {
+  width: 200px;
+  height: 45px;
+  font-family: "Commissioner", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 3rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #DEC377;
+  border-radius: 0.2rem;
+  border: 0;
+}
+main .services-describe-button:hover {
+  cursor: pointer;
+  background: rgba(222, 195, 119, 0.75);
+}
+main .confidence-benefit {
+  background-color: #FFFFFF;
+}
+main .confidence-benefit .wrapper {
+  max-width: 117rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 6.7rem 0 9.5rem 0;
+}
+main .confidence-benefit-content {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+main .confidence-benefit-content:first-child {
+  margin-bottom: 5.3rem;
+}
+main .confidence-benefit-content:last-child {
+  margin-top: 4.1rem;
+}
+main .confidence-benefit-content-left {
+  max-width: 47rem;
+  margin-right: 14.9rem;
+  padding-bottom: 23px;
+}
+main .confidence-benefit-content-left h2 {
+  margin: 0 0 3rem 0;
+  font-family: "Commissioner", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.8rem;
+  line-height: 4rem;
+  letter-spacing: 0.03em;
+  color: rgba(0, 0, 0, 0.9);
+}
+main .confidence-benefit-content-left p {
+  margin: 0 0 3.5rem 0;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+main .confidence-benefit-content .last-item {
+  padding: 2.8rem 0 0 0;
+}
+main .confidence-benefit-content-right {
+  padding: 19px 0 6px 0;
+  max-width: 44.4rem;
+}
+main .confidence-benefit-content-right li {
+  margin: 0 0;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.7rem;
+  line-height: 3rem;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.75);
+  padding-left: 7rem;
+  margin-bottom: 3.3rem;
+  position: relative;
+}
+main .confidence-benefit-content-right li:last-child {
+  margin-bottom: 0;
+}
+main .confidence-benefit-content-right li:before {
+  position: absolute;
+  left: 0;
+  top: 65%;
+  transform: translateY(-50%);
+  content: url(../assets/images/group-icon.png);
+  margin-right: 3rem;
+}
+main .advantages-block2 {
+  background-color: #E5E5E5;
+}
+main .advantages-block2 .wrapper {
+  max-width: 117rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 8rem 0 10rem 0;
+}
+main .advantages-block2-title {
+  margin: 0 0 3.5rem 0;
+  font-family: "Commissioner", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.8rem;
+  line-height: 4rem;
+  letter-spacing: 0.03em;
+  color: rgba(0, 0, 0, 0.9);
+}
+main .advantages-block2 .advantages {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+main .advantages-block2 .advantages-card {
+  margin: 0 1.5rem;
+  padding: 5rem 2rem 4rem;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+}
+main .advantages-block2 .advantages-card-container-icon {
+  margin: 0 auto 2.5rem;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+main .advantages-block2 .advantages-card-container-icon img {
+  position: absolute;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+main .advantages-block2 .advantages-card-subtitle {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.75);
+  width: 23rem;
+  text-align: center;
+}
+main .advantages-block2 .advantages-card:first-child {
+  margin-left: 0;
+}
+main .advantages-block2 .advantages-card:last-child {
+  margin-right: 0;
+}
+main .advantages-block2-text {
+  padding: 4rem 36.9rem 4.5rem 5rem;
+  background-color: #FFFFFF;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: rgba(0, 0, 0, 0.8);
+  position: relative;
+}
+main .advantages-block2-text-rectangle {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+main .cooperation {
+  background-color: #E5E5E5;
+}
+main .cooperation .wrapper {
+  max-width: 117rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 0 10rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+main .cooperation-content {
+  max-width: 50rem;
+}
+main .cooperation-content-title {
+  margin: 0 0 3.5rem 0;
+  font-family: "Commissioner", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.8rem;
+  line-height: 4rem;
+  letter-spacing: 0.03em;
+  color: rgba(0, 0, 0, 0.9);
+}
+main .cooperation-content-list {
+  margin: 0 0 3.5rem 0;
+}
+main .cooperation-content-list li {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: rgba(0, 0, 0, 0.8);
+  padding-left: 9.8rem;
+  position: relative;
+}
+main .cooperation-content-list li:before {
+  position: absolute;
+  left: 0;
+}
+main .cooperation-content-list .first {
+  margin-bottom: 2.8rem;
+}
+main .cooperation-content-list .first:before {
+  content: url(../assets/images/number-1.png);
+}
+main .cooperation-content-list .second:before {
+  content: url(../assets/images/number-2.png);
+}
+main .cooperation-content-text {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.8);
+}
+main .cooperation-form {
+  max-width: 57rem;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 4rem 5rem 5rem 5rem;
+}
+main .cooperation-form .contact-form__input-wrapper {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+main .cooperation-form .contact-form__input-wrapper .contact-form-label {
+  display: block;
+  margin: 0 0 1.2rem 0;
+  font-family: "Commissioner", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  letter-spacing: 0.01em;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+}
+main .cooperation-form .contact-form__input-wrapper .contact-form-input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.8rem;
+  padding-right: 0;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+main .cooperation-form .contact-form__input-wrapper .contact-form-input::placeholder {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+main .cooperation-form .contact-form__input-wrapper p {
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+main .cooperation-form .contact-form__input-wrapper a {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: underline;
+}
+main .cooperation-form .contact-form-button {
+  margin-top: 1rem;
+  width: 47rem;
+  height: 4.5rem;
+  border: none;
+  outline: none;
+  background: #DEC377;
+  border-radius: 2px;
+  font-family: "Commissioner", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 3rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+main .cooperation-form .contact-form-button:hover {
+  cursor: pointer;
+  background: rgba(222, 195, 119, 0.75);
+}
+main .service-cost {
+  background-color: #E5E5E5;
+}
+main .service-cost .wrapper {
+  max-width: 117rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 0 10rem 0;
+}
+main .service-cost-title {
+  margin: 0 0 3.3rem 0;
+  font-family: "Commissioner", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.8rem;
+  line-height: 4rem;
+  letter-spacing: 0.03em;
+  color: rgba(0, 0, 0, 0.9);
+}
+main .service-cost-text {
+  margin: 0 0 2.7rem 0;
+  max-width: 67rem;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+main .service-cost-button {
+  width: 20rem;
+  height: 4.5rem;
+  border: none;
+  outline: none;
+  background: #DEC377;
+  border-radius: 2px;
+  font-family: "Commissioner", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 3rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+main .service-cost-button:hover {
+  cursor: pointer;
+  background: rgba(222, 195, 119, 0.75);
+}
+
+hr {
+  margin: 0;
+  background: rgba(0, 0, 0, 0.1);
+  opacity: 0.7;
+}
+
+.footer {
+  width: 100vw;
+  background-color: #E5E5E5;
+}
+.footer .wrapper {
+  max-width: 117rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 4.8rem 0 6rem 0;
+  display: flex;
+  justify-content: left;
+}
+.footer-social {
+  margin-right: 3rem;
+  max-width: 27rem;
+}
+.footer-social-title {
+  margin: 0 0 7rem 0;
+  font-family: "Commissioner", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: rgba(0, 0, 0, 0.9);
+}
+.footer-social-unp {
+  margin: 0 0 1rem 0;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+.footer-social-unp span {
+  display: inline-block;
+  margin-right: 1.5rem;
+  font-family: "Commissioner", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.5);
+}
+.footer-social-rating {
+  margin: 0 0 6rem 0;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+.footer-social-rating span {
+  display: inline-block;
+  margin-right: 1.5rem;
+  font-family: "Commissioner", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.5);
+}
+.footer-social-list {
+  margin: 0 0 5rem 0;
+  display: flex;
+  justify-content: left;
+}
+.footer-social-list li {
+  margin: 0 1.5rem 0 0;
+}
+.footer-social-list li:last-child {
+  margin: 0 0 0 0;
+}
+.footer-social-list li a {
+  width: 100%;
+  height: 100%;
+}
+.footer-social-container-link {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 0 0 3rem 0;
+}
+.footer-social-container-link img {
+  display: inline-block;
+}
+.footer-social-mapsite {
+  display: inline-block;
+  margin: 0 1.5rem 0 0;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.75);
+}
+.footer-social-privacy-policy {
+  display: block;
+  margin: 0 1.5rem 0 0;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.75);
+}
+.footer-offices {
+  margin-right: 3rem;
+  padding-top: 3.5rem;
+}
+.footer-offices-title {
+  margin-bottom: 0.5rem;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+}
+.footer-offices-subtitle {
+  margin: 0 0 1rem 0;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: rgba(0, 0, 0, 0.75);
+}
+.footer-offices-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.9rem 0 0 0;
+}
+.footer-offices-content-1 {
+  max-width: 20rem;
+}
+.footer-offices-content-2 {
+  max-width: 20rem;
+  margin: 0 3.5rem;
+}
+.footer-offices-content-3 {
+  max-width: 20rem;
+}
+.footer-offices-content-contact-city {
+  margin-bottom: 3.5rem;
+}
+.footer-offices-content-phone {
+  padding: 1rem 0 2rem 0;
+}
+.footer-offices-content-phone a {
+  display: block;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+.footer-offices-content-address {
+  margin-bottom: 2rem;
+}
+.footer-offices-content .caption {
+  margin-bottom: 0.5rem;
+  font-family: "Commissioner", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.75);
+}
+.footer-offices-content .address {
+  margin-bottom: 0.5rem;
+  padding-right: 2.4rem;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+.footer-offices-content .resident {
+  display: block;
+  margin: -0.5rem 0 1.9rem 0;
+}
+.footer-offices-content .mail {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  outline: none;
+}
+.footer-offices-content .mail:hover {
+  cursor: pointer;
+}
+.footer-working-hours {
+  max-width: 17rem;
+  padding-top: 3.5rem;
+}
+.footer-working-hours hr {
+  margin-bottom: 2.9rem;
+}
+.footer-working-hours .working-hours-block {
+  margin-bottom: 3rem;
+}
+.footer-working-hours .caption {
+  margin-bottom: 0.5rem;
+  font-family: "Commissioner", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.75);
+}
+.footer-working-hours .working-hours {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.footer .footer-copyrite {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 1.7rem 0 1.8rem 0;
+  width: 100%;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slider-wrapp {
+  background-color: transparent;
+  outline: none;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow {
+  background: url(../assets/images/arrow-left.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+  font-size: 0;
+}
+.slick-arrow:hover {
+  cursor: pointer;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+  font-size: 25px;
+}
+
+/* Slider */
+/* Dots */
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -55px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-dots li button {
+  border: 0;
+  background: transparent;
+  display: block;
+  height: 10px;
+  width: 10px;
+  outline: none;
+  line-height: 0px;
+  font-size: 0px;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+.slick-dots li button:hover, .slick-dots li button:focus {
+  outline: none;
+}
+.slick-dots li button:hover:before, .slick-dots li button:focus:before {
+  opacity: 1;
+}
+.slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 10px;
+  height: 10px;
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 10px;
+  text-align: center;
+  background-color: black;
+  opacity: 0.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border-radius: 100%;
+}
+.slick-dots li.slick-active button:before {
+  background-color: #DEC377;
+  opacity: 0.75;
+}
+
+/*# sourceMappingURL=main.css.map */
