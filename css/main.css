@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import "./reset.css";
 :root {
   font-size: 10px;
@@ -15,8 +16,18 @@ body {
   position: relative;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
+.stop-scrolling {
+  position: fixed;
+  width: 100%;
+}
+
 header {
   width: 100vw;
+  overflow: hidden;
 }
 header .wrapper {
   max-width: 117rem;
@@ -161,28 +172,32 @@ header .navigation .menu-list-link img {
 
 main {
   width: 100vw;
+  overflow: hidden;
 }
-main .main-screen .wrapper {
+
+.main-screen .wrapper {
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0;
   justify-content: space-between;
   position: relative;
 }
-main .main-screen .carousel-item {
+.main-screen .carousel-item {
   position: relative;
+  width: 100%;
+  overflow: hidden;
 }
-main .main-screen .carousel-item-content {
+.main-screen .carousel-item-content {
   position: absolute;
   top: 16rem;
   left: 37.5rem;
   max-width: 57rem;
   text-align: left;
 }
-main .main-screen .carousel-img {
+.main-screen .carousel-img {
   width: 100%;
 }
-main .main-screen .content-title {
+.main-screen .content-title {
   font-family: "Commissioner", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -192,7 +207,7 @@ main .main-screen .content-title {
   color: rgba(0, 0, 0, 0.9);
   margin-bottom: 2rem;
 }
-main .main-screen .content-subtitle {
+.main-screen .content-subtitle {
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -201,7 +216,7 @@ main .main-screen .content-subtitle {
   color: rgba(0, 0, 0, 0.8);
   margin-bottom: 5rem;
 }
-main .main-screen .main-button {
+.main-screen .main-button {
   width: 200px;
   height: 45px;
   font-family: "Commissioner", sans-serif;
@@ -216,35 +231,36 @@ main .main-screen .main-button {
   border-radius: 0.2rem;
   border: 0;
 }
-main .main-screen .main-button:hover {
+.main-screen .main-button:hover {
   cursor: pointer;
   background: rgba(222, 195, 119, 0.75);
 }
-main .main-screen .advantages {
-  padding: 0 37.5rem;
+.main-screen .advantages {
   position: absolute;
   bottom: -19.5rem;
+  left: 50%;
+  transform: translate(-50%, 0);
   display: flex;
   justify-content: space-between;
 }
-main .main-screen .advantages-card {
+.main-screen .advantages-card {
   margin: 0 1.5rem;
   padding: 5rem 2rem 4rem;
   background-color: #FFFFFF;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
 }
-main .main-screen .advantages-card-container-icon {
+.main-screen .advantages-card-container-icon {
   margin: 0 auto 2.5rem;
   width: 12rem;
   height: 12rem;
   border-radius: 50%;
   box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.1);
 }
-main .main-screen .advantages-card-container-icon-img {
+.main-screen .advantages-card-container-icon-img {
   top: 50%;
   transform: translate(50%, 50%);
 }
-main .main-screen .advantages-card-subtitle {
+.main-screen .advantages-card-subtitle {
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -255,13 +271,13 @@ main .main-screen .advantages-card-subtitle {
   width: 23rem;
   text-align: center;
 }
-main .main-screen .advantages-card:first-child {
+.main-screen .advantages-card:first-child {
   margin-left: 0;
 }
-main .main-screen .advantages-card:last-child {
+.main-screen .advantages-card:last-child {
   margin-right: 0;
 }
-main .main-screen .introduction .wrapper {
+.main-screen .introduction .wrapper {
   max-width: 117rem;
   box-sizing: border-box;
   margin: 0 auto;
@@ -269,7 +285,8 @@ main .main-screen .introduction .wrapper {
   justify-content: space-between;
   position: relative;
 }
-main #main-slider > button.slick-prev {
+
+#main-slider > button.slick-prev {
   position: absolute;
   bottom: 120px;
   left: 399px;
@@ -277,18 +294,21 @@ main #main-slider > button.slick-prev {
   width: 1.8rem;
   height: 1.8rem;
 }
-main #main-slider > button.slick-next {
+
+#main-slider > button.slick-next {
   position: absolute;
   bottom: 120px;
   left: 453px;
+  z-index: 2;
   transform: rotate(180deg);
   width: 1.8rem;
   height: 1.8rem;
 }
-main .introduction {
+
+.introduction {
   background: #E5E5E5;
 }
-main .introduction .wrapper {
+.introduction .wrapper {
   max-width: 117rem;
   box-sizing: border-box;
   margin: 0 auto;
@@ -299,11 +319,11 @@ main .introduction .wrapper {
   justify-content: space-between;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
 }
-main .introduction-content {
+.introduction-content {
   padding: 5rem 6rem 6rem 7rem;
   background-color: #FFFFFF;
 }
-main .introduction-title {
+.introduction-title {
   margin-bottom: 3rem;
   font-family: "Commissioner", sans-serif;
   font-style: normal;
@@ -313,7 +333,7 @@ main .introduction-title {
   letter-spacing: 0.03em;
   color: rgba(0, 0, 0, 0.9);
 }
-main .introduction-text {
+.introduction-text {
   margin-bottom: 2.5rem;
   padding-right: 7rem;
   font-family: "Lato", sans-serif;
@@ -323,19 +343,20 @@ main .introduction-text {
   line-height: 2.5rem;
   color: rgba(0, 0, 0, 0.8);
 }
-main .introduction-text-last {
+.introduction-text-last {
   margin-bottom: 0;
 }
-main .main-directions {
+
+.main-directions {
   background: #E5E5E5;
 }
-main .main-directions .wrapper {
+.main-directions .wrapper {
   max-width: 117rem;
   box-sizing: border-box;
   margin: 0 auto;
   padding: 5rem 0 5rem;
 }
-main .main-directions-title {
+.main-directions-title {
   margin-bottom: 3.5rem;
   font-family: "Commissioner", sans-serif;
   font-style: normal;
@@ -345,13 +366,13 @@ main .main-directions-title {
   letter-spacing: 0.03em;
   color: rgba(0, 0, 0, 0.9);
 }
-main .main-directions-services {
+.main-directions-services {
   margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-main .main-directions-services-card {
+.main-directions-services-card {
   margin-bottom: 3rem;
   padding: 1.5rem 1.5rem 2.5rem 4rem;
   display: flex;
@@ -359,12 +380,12 @@ main .main-directions-services-card {
   background-color: #FFFFFF;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
 }
-main .main-directions-services-card-content {
+.main-directions-services-card-content {
   padding-top: 1rem;
   width: 18rem;
   margin-right: 5.5rem;
 }
-main .main-directions-services-card-content h5 {
+.main-directions-services-card-content h5 {
   font-family: "Commissioner", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -372,7 +393,7 @@ main .main-directions-services-card-content h5 {
   line-height: 3rem;
   color: rgba(0, 0, 0, 0.9);
 }
-main .main-directions-services-card-content a {
+.main-directions-services-card-content a {
   display: inline-block;
   margin-top: 10px;
   font-family: "Lato", sans-serif;
@@ -384,10 +405,10 @@ main .main-directions-services-card-content a {
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.5);
 }
-main .main-directions-services-card-content .link-marg {
+.main-directions-services-card-content .link-marg {
   margin-top: 40px;
 }
-main .main-directions-button {
+.main-directions-button {
   width: 20rem;
   height: 4.5rem;
   border: none;
@@ -403,28 +424,29 @@ main .main-directions-button {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-main .main-directions-button:hover {
+.main-directions-button:hover {
   cursor: pointer;
   background: rgba(222, 195, 119, 0.75);
 }
-main .work-principles {
+
+.work-principles {
   position: relative;
   width: 100vw;
   max-height: 76rem;
   background: #E5E5E5;
 }
-main .work-principles .wrapper {
+.work-principles .wrapper {
   max-width: 117rem;
   box-sizing: border-box;
   margin: 0 auto;
   padding: 5rem 0;
 }
-main .work-principles-container {
+.work-principles-container {
   display: flex;
   justify-content: space-between;
   margin-bottom: 2.5rem;
 }
-main .work-principles-title {
+.work-principles-title {
   margin: 0 3rem 0 0;
   font-family: "Commissioner", sans-serif;
   font-style: normal;
@@ -434,11 +456,11 @@ main .work-principles-title {
   letter-spacing: 0.03em;
   color: rgba(0, 0, 0, 0.9);
 }
-main .work-principles-content {
+.work-principles-content {
   margin-bottom: 3.5rem;
   max-width: 77rem;
 }
-main .work-principles-content p {
+.work-principles-content p {
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -446,17 +468,18 @@ main .work-principles-content p {
   line-height: 2.5rem;
   color: rgba(0, 0, 0, 0.8);
 }
-main .work-principles-content p:first-child {
+.work-principles-content p:first-child {
   margin-bottom: 2.5rem;
 }
-main .work-principles-slider {
+.work-principles-slider {
   position: relative;
 }
-main .work-principles-slider .work-principl-img {
+.work-principles-slider .work-principl-img {
   width: 117rem;
   z-index: 5;
 }
-main #work-principles-slider > button.slick-prev {
+
+#work-principles-slider > button.slick-prev {
   position: absolute;
   bottom: 265px;
   left: -60px;
@@ -464,7 +487,8 @@ main #work-principles-slider > button.slick-prev {
   width: 2.5rem;
   height: 3rem;
 }
-main #work-principles-slider > button.slick-next {
+
+#work-principles-slider > button.slick-next {
   position: absolute;
   bottom: 265px;
   right: -60px;
@@ -473,16 +497,17 @@ main #work-principles-slider > button.slick-next {
   width: 2.5rem;
   height: 3rem;
 }
-main .partner-reviews {
+
+.partner-reviews {
   padding: 21rem 0 10.5rem 0;
 }
-main .partner-reviews .wrapper {
+.partner-reviews .wrapper {
   max-width: 117rem;
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0;
 }
-main .partner-reviews-title {
+.partner-reviews-title {
   margin: 0 0 3.5rem 0;
   font-family: "Commissioner", sans-serif;
   font-style: normal;
@@ -492,22 +517,22 @@ main .partner-reviews-title {
   letter-spacing: 0.03em;
   color: rgba(0, 0, 0, 0.9);
 }
-main .partner-reviews-slider {
+.partner-reviews-slider {
   margin-bottom: 3rem;
 }
-main .partner-reviews-slider .partner-review {
+.partner-reviews-slider .partner-review {
   max-width: 57rem;
   text-align: left;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
 }
-main .partner-reviews-slider .partner-review-img {
+.partner-reviews-slider .partner-review-img {
   display: inline-block;
   margin-bottom: 4rem;
 }
-main .partner-reviews-slider .partner-review-content {
+.partner-reviews-slider .partner-review-content {
   padding: 0 5rem 6.5rem 5rem;
 }
-main .partner-reviews-slider .partner-review-person {
+.partner-reviews-slider .partner-review-person {
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -515,7 +540,7 @@ main .partner-reviews-slider .partner-review-person {
   line-height: 2.5rem;
   color: rgba(0, 0, 0, 0.5);
 }
-main .partner-reviews-slider .partner-review-name {
+.partner-reviews-slider .partner-review-name {
   margin-bottom: 2rem;
   font-family: "Commissioner", sans-serif;
   font-style: normal;
@@ -525,7 +550,7 @@ main .partner-reviews-slider .partner-review-name {
   letter-spacing: 0.01em;
   color: #DEC377;
 }
-main .partner-reviews-slider .partner-review-text {
+.partner-reviews-slider .partner-review-text {
   margin-bottom: 2.5rem;
   font-family: "Lato", sans-serif;
   font-style: normal;
@@ -535,7 +560,7 @@ main .partner-reviews-slider .partner-review-text {
   letter-spacing: 0.01em;
   color: rgba(0, 0, 0, 0.8);
 }
-main .partner-reviews-slider .partner-review-link {
+.partner-reviews-slider .partner-review-link {
   margin-bottom: 2rem;
   font-family: "Lato", sans-serif;
   font-style: normal;
@@ -546,7 +571,7 @@ main .partner-reviews-slider .partner-review-link {
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.5);
 }
-main .partner-reviews-button {
+.partner-reviews-button {
   width: 20rem;
   height: 4.5rem;
   font-family: "Commissioner", sans-serif;
@@ -562,11 +587,12 @@ main .partner-reviews-button {
   border-radius: 2px;
   outline: none;
 }
-main .partner-reviews-button:hover {
+.partner-reviews-button:hover {
   cursor: pointer;
   background: rgba(222, 195, 119, 0.75);
 }
-main #partner-reviews-slider > button.slick-prev {
+
+#partner-reviews-slider > button.slick-prev {
   position: absolute;
   bottom: -70px;
   right: 83px;
@@ -574,7 +600,8 @@ main #partner-reviews-slider > button.slick-prev {
   width: 1rem;
   height: 3rem;
 }
-main #partner-reviews-slider > button.slick-next {
+
+#partner-reviews-slider > button.slick-next {
   position: absolute;
   bottom: -60px;
   right: 23px;
@@ -583,18 +610,19 @@ main #partner-reviews-slider > button.slick-next {
   width: 1rem;
   height: 3rem;
 }
-main .clients .wrapper {
+
+.clients .wrapper {
   max-width: 117rem;
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0 0 10rem 0;
 }
-main .clients-content {
+.clients-content {
   display: flex;
   justify-content: left;
   margin-bottom: 4rem;
 }
-main .clients-content-text {
+.clients-content-text {
   margin: 0 10rem 0 0;
   font-family: "Lato", sans-serif;
   font-style: normal;
@@ -604,7 +632,7 @@ main .clients-content-text {
   color: rgba(0, 0, 0, 0.8);
   max-width: 67rem;
 }
-main .clients-content-button {
+.clients-content-button {
   width: 20rem;
   height: 4.5rem;
   font-family: "Commissioner", sans-serif;
@@ -621,35 +649,36 @@ main .clients-content-button {
   border-radius: 2px;
   outline: none;
 }
-main .clients-content-button:hover {
+.clients-content-button:hover {
   cursor: pointer;
   color: rgba(222, 195, 119, 0.75);
 }
-main .clients-images {
+.clients-images {
   display: flex;
   justify-content: space-around;
   align-items: center;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   mix-blend-mode: luminosity;
 }
-main .clients-images img {
+.clients-images img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   mix-blend-mode: luminosity;
 }
-main .triangle {
+
+.triangle {
   background-color: #E5E5E5;
 }
-main .triangle .wrapper {
+.triangle .wrapper {
   max-width: 117rem;
   box-sizing: border-box;
   margin: 0 auto;
   padding: 8rem 0 10rem 0;
 }
-main .triangle-top {
+.triangle-top {
   display: flex;
   margin-bottom: 3rem;
 }
-main .triangle-top-left {
+.triangle-top-left {
   box-sizing: border-box;
   margin-right: 1.5rem;
   padding: 4rem 5rem 5.5rem 5rem;
@@ -657,7 +686,7 @@ main .triangle-top-left {
   background: #FFFFFF;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
 }
-main .triangle-top-right {
+.triangle-top-right {
   box-sizing: border-box;
   margin-left: 1.5rem;
   padding: 4rem 5rem 5.5rem 5rem;
@@ -666,12 +695,12 @@ main .triangle-top-right {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
   position: relative;
 }
-main .triangle-top-right-rectangle {
+.triangle-top-right-rectangle {
   position: absolute;
   top: 0;
   right: 0;
 }
-main .triangle-top h4 {
+.triangle-top h4 {
   margin: 0 0 1.5rem 0;
   font-family: "Commissioner", sans-serif;
   font-style: normal;
@@ -681,7 +710,7 @@ main .triangle-top h4 {
   color: rgba(0, 0, 0, 0.9);
   max-width: 45rem;
 }
-main .triangle-top p {
+.triangle-top p {
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -689,14 +718,14 @@ main .triangle-top p {
   line-height: 2.5rem;
   color: rgba(0, 0, 0, 0.8);
 }
-main .triangle-bottom {
+.triangle-bottom {
   padding: 3.5rem 5rem 4.5rem 5rem;
   display: flex;
   justify-content: space-between;
   background: #FFFFFF;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
 }
-main .triangle-bottom h4 {
+.triangle-bottom h4 {
   margin: 0 10rem 0 0;
   font-family: "Commissioner", sans-serif;
   font-style: normal;
@@ -706,7 +735,7 @@ main .triangle-bottom h4 {
   color: rgba(0, 0, 0, 0.9);
   max-width: 32rem;
 }
-main .triangle-bottom p {
+.triangle-bottom p {
   padding-top: 0.5rem;
   font-family: "Lato", sans-serif;
   font-style: normal;
@@ -716,16 +745,22 @@ main .triangle-bottom p {
   color: rgba(0, 0, 0, 0.8);
   max-width: 72rem;
 }
-main .services {
+
+.banner-img-pen {
+  width: 100%;
+  overflow: hidden;
+}
+
+.services {
   background-color: #E5E5E5;
 }
-main .services .wrapper {
+.services .wrapper {
   max-width: 117rem;
   box-sizing: border-box;
   margin: 0 auto;
   padding: 8rem 0 10rem 0;
 }
-main .services-title {
+.services-title {
   margin: 0 0 3.5rem 0;
   font-family: "Commissioner", sans-serif;
   font-style: normal;
@@ -735,7 +770,7 @@ main .services-title {
   letter-spacing: 0.03em;
   color: rgba(0, 0, 0, 0.9);
 }
-main .services-container {
+.services-container {
   margin-bottom: 5rem;
   box-sizing: border-box;
   display: grid;
@@ -743,12 +778,12 @@ main .services-container {
   grid-template-columns: 470px 1fr 1fr 470px;
   grid-gap: 3rem;
 }
-main .services-container div {
+.services-container div {
   padding: 2.5rem 3rem 0 10rem;
   background-color: #FFFFFF;
   box-sizing: border-box;
 }
-main .services-container h5 {
+.services-container h5 {
   margin: 0 0 4.5rem 0;
   font-family: "Commissioner", sans-serif;
   font-style: normal;
@@ -757,7 +792,10 @@ main .services-container h5 {
   line-height: 3rem;
   color: rgba(0, 0, 0, 0.9);
 }
-main .services-container a {
+.services-container a {
+  position: absolute;
+  right: 3rem;
+  bottom: 2rem;
   display: block;
   text-align: right;
   font-family: "Lato", sans-serif;
@@ -769,57 +807,64 @@ main .services-container a {
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.5);
 }
-main .services-container-item-1 {
+.services-container-item-1 {
   grid-column: 1/2;
   box-shadow: inset 7rem 0 0 0 rgba(222, 195, 119, 0.4);
+  position: relative;
 }
-main .services-container-item-2 {
+.services-container-item-2 {
   grid-column: 2/5;
   box-shadow: inset 7rem 0 0 0 rgba(222, 195, 119, 0.4);
+  position: relative;
 }
-main .services-container-item-3 {
+.services-container-item-3 {
   grid-column: 1/3;
   box-shadow: inset 7rem 0 0 0 rgba(222, 195, 119, 0.75);
+  position: relative;
 }
-main .services-container-item-4 {
+.services-container-item-4 {
   grid-column: 3/5;
   box-shadow: inset 7rem 0 0 0 rgba(222, 195, 119, 0.75);
+  position: relative;
 }
-main .services-container-item-5 {
+.services-container-item-5 {
   grid-column: 1/4;
   box-shadow: inset 7rem 0 0 0 #DEC377;
+  position: relative;
 }
-main .services-container-item-5 h5 {
+.services-container-item-5 h5 {
   margin: 0 0 1.5rem 0;
 }
-main .services-container-item-5 a {
-  margin: 0 0 2rem 0;
-}
-main .services-container-item-6 {
+.services-container-item-6 {
   grid-column: 4/5;
   box-shadow: inset 7rem 0 0 0 #DEC377;
+  position: relative;
 }
-main .services-container-item-7 {
+.services-container-item-7 {
   grid-column: 1/3;
   box-shadow: inset 7rem 0 0 0 rgba(222, 195, 119, 0.75);
+  position: relative;
 }
-main .services-container-item-8 {
+.services-container-item-8 {
   grid-column: 3/5;
   box-shadow: inset 7rem 0 0 0 rgba(222, 195, 119, 0.75);
+  position: relative;
 }
-main .services-container-item-9 {
+.services-container-item-9 {
   grid-column: 1/2;
   box-shadow: inset 7rem 0 0 0 rgba(222, 195, 119, 0.4);
+  position: relative;
 }
-main .services-container-item-10 {
+.services-container-item-10 {
   grid-column: 2/5;
   box-shadow: inset 7rem 0 0 0 rgba(222, 195, 119, 0.4);
+  position: relative;
 }
-main .services-describe {
+.services-describe {
   display: flex;
   justify-content: space-between;
 }
-main .services-describe-text {
+.services-describe-text {
   max-width: 77rem;
   font-family: "Lato", sans-serif;
   font-style: normal;
@@ -828,7 +873,7 @@ main .services-describe-text {
   line-height: 2.5rem;
   color: rgba(0, 0, 0, 0.8);
 }
-main .services-describe-button {
+.services-describe-button {
   width: 200px;
   height: 45px;
   font-family: "Commissioner", sans-serif;
@@ -843,36 +888,37 @@ main .services-describe-button {
   border-radius: 0.2rem;
   border: 0;
 }
-main .services-describe-button:hover {
+.services-describe-button:hover {
   cursor: pointer;
   background: rgba(222, 195, 119, 0.75);
 }
-main .confidence-benefit {
+
+.confidence-benefit {
   background-color: #FFFFFF;
 }
-main .confidence-benefit .wrapper {
+.confidence-benefit .wrapper {
   max-width: 117rem;
   box-sizing: border-box;
   margin: 0 auto;
   padding: 6.7rem 0 9.5rem 0;
 }
-main .confidence-benefit-content {
+.confidence-benefit-content {
   display: flex;
   justify-content: left;
   align-items: center;
 }
-main .confidence-benefit-content:first-child {
+.confidence-benefit-content:first-child {
   margin-bottom: 5.3rem;
 }
-main .confidence-benefit-content:last-child {
+.confidence-benefit-content:last-child {
   margin-top: 4.1rem;
 }
-main .confidence-benefit-content-left {
+.confidence-benefit-content-left {
   max-width: 47rem;
   margin-right: 14.9rem;
   padding-bottom: 23px;
 }
-main .confidence-benefit-content-left h2 {
+.confidence-benefit-content-left h2 {
   margin: 0 0 3rem 0;
   font-family: "Commissioner", sans-serif;
   font-style: normal;
@@ -882,7 +928,7 @@ main .confidence-benefit-content-left h2 {
   letter-spacing: 0.03em;
   color: rgba(0, 0, 0, 0.9);
 }
-main .confidence-benefit-content-left p {
+.confidence-benefit-content-left p {
   margin: 0 0 3.5rem 0;
   font-family: "Lato", sans-serif;
   font-style: normal;
@@ -891,14 +937,14 @@ main .confidence-benefit-content-left p {
   line-height: 2.5rem;
   color: rgba(0, 0, 0, 0.8);
 }
-main .confidence-benefit-content .last-item {
+.confidence-benefit-content .last-item {
   padding: 2.8rem 0 0 0;
 }
-main .confidence-benefit-content-right {
+.confidence-benefit-content-right {
   padding: 19px 0 6px 0;
   max-width: 44.4rem;
 }
-main .confidence-benefit-content-right li {
+.confidence-benefit-content-right li {
   margin: 0 0;
   font-family: "Lato", sans-serif;
   font-style: normal;
@@ -911,10 +957,10 @@ main .confidence-benefit-content-right li {
   margin-bottom: 3.3rem;
   position: relative;
 }
-main .confidence-benefit-content-right li:last-child {
+.confidence-benefit-content-right li:last-child {
   margin-bottom: 0;
 }
-main .confidence-benefit-content-right li:before {
+.confidence-benefit-content-right li:before {
   position: absolute;
   left: 0;
   top: 65%;
@@ -922,16 +968,17 @@ main .confidence-benefit-content-right li:before {
   content: url(../assets/images/group-icon.png);
   margin-right: 3rem;
 }
-main .advantages-block2 {
+
+.advantages-block2 {
   background-color: #E5E5E5;
 }
-main .advantages-block2 .wrapper {
+.advantages-block2 .wrapper {
   max-width: 117rem;
   box-sizing: border-box;
   margin: 0 auto;
   padding: 8rem 0 10rem 0;
 }
-main .advantages-block2-title {
+.advantages-block2-title {
   margin: 0 0 3.5rem 0;
   font-family: "Commissioner", sans-serif;
   font-style: normal;
@@ -941,18 +988,18 @@ main .advantages-block2-title {
   letter-spacing: 0.03em;
   color: rgba(0, 0, 0, 0.9);
 }
-main .advantages-block2 .advantages {
+.advantages-block2 .advantages {
   margin-bottom: 4rem;
   display: flex;
   justify-content: space-between;
 }
-main .advantages-block2 .advantages-card {
+.advantages-block2 .advantages-card {
   margin: 0 1.5rem;
   padding: 5rem 2rem 4rem;
   background-color: #FFFFFF;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
 }
-main .advantages-block2 .advantages-card-container-icon {
+.advantages-block2 .advantages-card-container-icon {
   margin: 0 auto 2.5rem;
   width: 12rem;
   height: 12rem;
@@ -960,12 +1007,13 @@ main .advantages-block2 .advantages-card-container-icon {
   box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.1);
   position: relative;
 }
-main .advantages-block2 .advantages-card-container-icon img {
+.advantages-block2 .advantages-card-container-icon img {
   position: absolute;
   top: 50%;
-  transform: translate(50%, -50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-main .advantages-block2 .advantages-card-subtitle {
+.advantages-block2 .advantages-card-subtitle {
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -976,13 +1024,13 @@ main .advantages-block2 .advantages-card-subtitle {
   width: 23rem;
   text-align: center;
 }
-main .advantages-block2 .advantages-card:first-child {
+.advantages-block2 .advantages-card:first-child {
   margin-left: 0;
 }
-main .advantages-block2 .advantages-card:last-child {
+.advantages-block2 .advantages-card:last-child {
   margin-right: 0;
 }
-main .advantages-block2-text {
+.advantages-block2-text {
   padding: 4rem 36.9rem 4.5rem 5rem;
   background-color: #FFFFFF;
   font-family: "Lato", sans-serif;
@@ -993,15 +1041,16 @@ main .advantages-block2-text {
   color: rgba(0, 0, 0, 0.8);
   position: relative;
 }
-main .advantages-block2-text-rectangle {
+.advantages-block2-text-rectangle {
   position: absolute;
   top: 0;
   right: 0;
 }
-main .cooperation {
+
+.cooperation {
   background-color: #E5E5E5;
 }
-main .cooperation .wrapper {
+.cooperation .wrapper {
   max-width: 117rem;
   box-sizing: border-box;
   margin: 0 auto;
@@ -1009,10 +1058,10 @@ main .cooperation .wrapper {
   display: flex;
   justify-content: space-between;
 }
-main .cooperation-content {
+.cooperation-content {
   max-width: 50rem;
 }
-main .cooperation-content-title {
+.cooperation-content-title {
   margin: 0 0 3.5rem 0;
   font-family: "Commissioner", sans-serif;
   font-style: normal;
@@ -1022,10 +1071,10 @@ main .cooperation-content-title {
   letter-spacing: 0.03em;
   color: rgba(0, 0, 0, 0.9);
 }
-main .cooperation-content-list {
+.cooperation-content-list {
   margin: 0 0 3.5rem 0;
 }
-main .cooperation-content-list li {
+.cooperation-content-list li {
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1035,20 +1084,20 @@ main .cooperation-content-list li {
   padding-left: 9.8rem;
   position: relative;
 }
-main .cooperation-content-list li:before {
+.cooperation-content-list li:before {
   position: absolute;
   left: 0;
 }
-main .cooperation-content-list .first {
+.cooperation-content-list .first {
   margin-bottom: 2.8rem;
 }
-main .cooperation-content-list .first:before {
+.cooperation-content-list .first:before {
   content: url(../assets/images/number-1.png);
 }
-main .cooperation-content-list .second:before {
+.cooperation-content-list .second:before {
   content: url(../assets/images/number-2.png);
 }
-main .cooperation-content-text {
+.cooperation-content-text {
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -1057,17 +1106,17 @@ main .cooperation-content-text {
   letter-spacing: 0.01em;
   color: rgba(0, 0, 0, 0.8);
 }
-main .cooperation-form {
+.cooperation-form {
   max-width: 57rem;
   background-color: #FFFFFF;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
   padding: 4rem 5rem 5rem 5rem;
 }
-main .cooperation-form .contact-form__input-wrapper {
+.cooperation-form .contact-form__input-wrapper {
   width: 100%;
   margin-bottom: 2rem;
 }
-main .cooperation-form .contact-form__input-wrapper .contact-form-label {
+.cooperation-form .contact-form__input-wrapper .contact-form-label {
   display: block;
   margin: 0 0 1.2rem 0;
   font-family: "Commissioner", sans-serif;
@@ -1079,7 +1128,7 @@ main .cooperation-form .contact-form__input-wrapper .contact-form-label {
   font-weight: 600;
   color: rgba(0, 0, 0, 0.5);
 }
-main .cooperation-form .contact-form__input-wrapper .contact-form-input {
+.cooperation-form .contact-form__input-wrapper .contact-form-input {
   box-sizing: border-box;
   width: 100%;
   padding: 0.8rem;
@@ -1088,7 +1137,7 @@ main .cooperation-form .contact-form__input-wrapper .contact-form-input {
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   outline: none;
 }
-main .cooperation-form .contact-form__input-wrapper .contact-form-input::placeholder {
+.cooperation-form .contact-form__input-wrapper .contact-form-input::placeholder {
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -1096,7 +1145,7 @@ main .cooperation-form .contact-form__input-wrapper .contact-form-input::placeho
   line-height: 2.5rem;
   color: rgba(0, 0, 0, 0.5);
 }
-main .cooperation-form .contact-form__input-wrapper p {
+.cooperation-form .contact-form__input-wrapper p {
   width: 100%;
   font-family: "Lato", sans-serif;
   font-style: normal;
@@ -1105,7 +1154,7 @@ main .cooperation-form .contact-form__input-wrapper p {
   line-height: 2rem;
   color: rgba(0, 0, 0, 0.5);
 }
-main .cooperation-form .contact-form__input-wrapper a {
+.cooperation-form .contact-form__input-wrapper a {
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -1115,7 +1164,7 @@ main .cooperation-form .contact-form__input-wrapper a {
   color: rgba(0, 0, 0, 0.5);
   text-decoration: underline;
 }
-main .cooperation-form .contact-form-button {
+.cooperation-form .contact-form-button {
   margin-top: 1rem;
   width: 47rem;
   height: 4.5rem;
@@ -1132,20 +1181,21 @@ main .cooperation-form .contact-form-button {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-main .cooperation-form .contact-form-button:hover {
+.cooperation-form .contact-form-button:hover {
   cursor: pointer;
   background: rgba(222, 195, 119, 0.75);
 }
-main .service-cost {
+
+.service-cost {
   background-color: #E5E5E5;
 }
-main .service-cost .wrapper {
+.service-cost .wrapper {
   max-width: 117rem;
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0 0 10rem 0;
 }
-main .service-cost-title {
+.service-cost-title {
   margin: 0 0 3.3rem 0;
   font-family: "Commissioner", sans-serif;
   font-style: normal;
@@ -1155,7 +1205,7 @@ main .service-cost-title {
   letter-spacing: 0.03em;
   color: rgba(0, 0, 0, 0.9);
 }
-main .service-cost-text {
+.service-cost-text {
   margin: 0 0 2.7rem 0;
   max-width: 67rem;
   font-family: "Lato", sans-serif;
@@ -1165,7 +1215,7 @@ main .service-cost-text {
   line-height: 2.5rem;
   color: rgba(0, 0, 0, 0.8);
 }
-main .service-cost-button {
+.service-cost-button {
   width: 20rem;
   height: 4.5rem;
   border: none;
@@ -1181,7 +1231,7 @@ main .service-cost-button {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-main .service-cost-button:hover {
+.service-cost-button:hover {
   cursor: pointer;
   background: rgba(222, 195, 119, 0.75);
 }
@@ -1432,8 +1482,7 @@ hr {
 }
 .footer .footer-copyrite {
   background-color: rgba(0, 0, 0, 0.1);
-  padding: 1.7rem 0 1.8rem 0;
-  width: 100%;
+  padding: 1.7rem 2.5rem 1.8rem 2.5rem;
   text-align: center;
   font-family: "Lato", sans-serif;
   font-style: normal;
@@ -1608,6 +1657,854 @@ hr {
 .slick-dots li.slick-active button:before {
   background-color: #DEC377;
   opacity: 0.75;
+}
+
+@media (max-width: 1700px) {
+  .main-screen .carousel-item-content {
+    position: absolute;
+    top: 20%;
+    left: 14%;
+  }
+  .main-screen .advantages {
+    bottom: -43%;
+  }
+
+  #main-slider > button.slick-prev {
+    bottom: 50%;
+    left: 5%;
+  }
+
+  #main-slider > button.slick-next {
+    bottom: 50%;
+    left: 95%;
+  }
+}
+@media (max-width: 1300px) {
+  header .social {
+    margin-bottom: 0rem;
+    padding-left: 3rem;
+    justify-content: left;
+  }
+
+  header .social_eye {
+    margin: 0rem;
+    margin-left: 2rem;
+  }
+
+  /*********Меню-гамбургер************/
+  header .social_networks,
+header .navigation {
+    display: none;
+  }
+
+  .hamburger-menu {
+    position: absolute;
+    display: block;
+    z-index: 30;
+  }
+
+  .social-hamburger {
+    display: flex;
+    justify-content: space-between;
+  }
+  .social-hamburger a > img {
+    margin: 0 auto;
+  }
+
+  /* скрываем чекбокс */
+  #menu-toggle {
+    opacity: 0;
+    position: fixed;
+    top: 47px;
+    right: 55px;
+  }
+
+  /* стилизуем кнопку */
+  .menu-btn {
+    display: flex;
+    /* используем flex для центрирования содержимого */
+    align-items: center;
+    /* центрируем содержимое кнопки */
+    position: fixed;
+    top: 20px;
+    right: 55px;
+    width: 27px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  /* добавляем "гамбургер" */
+  .menu-btn > span,
+.menu-btn > span::before,
+.menu-btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #DEC377;
+  }
+
+  .menu-btn > span::before {
+    content: "";
+    top: -8px;
+  }
+
+  .menu-btn > span::after {
+    content: "";
+    top: 8px;
+  }
+
+  /* контейнер меню */
+  .menu-box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+    width: 320px;
+    height: 100%;
+    margin: 0;
+    padding-top: 7rem;
+    list-style: none;
+    text-align: center;
+    background-color: #DEC377;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  }
+  .menu-box li {
+    margin: auto;
+    margin-bottom: 2rem;
+    padding: 0 8px;
+    max-width: 24.3rem;
+    line-height: 5.12rem;
+  }
+  .menu-box .list__link_active {
+    border-bottom: #DEC377 3px solid;
+  }
+  .menu-box .logo-menu-box {
+    position: absolute;
+    left: 0.2rem;
+    top: 3rem;
+  }
+
+  /* элементы меню */
+  .menu-item {
+    display: block;
+    padding: 0;
+    width: 100%;
+    font-family: "Commissioner", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+
+  .menu-item:hover {
+    background-color: #CFD8DC;
+  }
+
+  #menu-toggle:checked ~ .menu-btn > span {
+    transform: rotate(90deg);
+    transition: 0.8s ease;
+    background-color: #FFFFFF;
+  }
+
+  #menu-toggle:checked ~ .menu-btn > span::before {
+    top: 1rem;
+    transform: rotate(180deg);
+    transition: 0.8s ease;
+    background-color: #FFFFFF;
+  }
+
+  #menu-toggle:checked ~ .menu-btn > span::after {
+    top: -1rem;
+    transform: rotate(180deg);
+    transition: 0.8s ease;
+    background-color: #FFFFFF;
+  }
+
+  #menu-toggle:checked ~ .menu-box {
+    visibility: visible;
+    transition: 0.8s ease;
+    right: 0;
+  }
+
+  .main-screen .advantages {
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 4rem;
+    background-color: #E5E5E5;
+  }
+  .main-screen .advantages-card {
+    margin: 1rem 1.5rem;
+  }
+  .main-screen .advantages-card:first-child {
+    margin-left: 1.5rem;
+  }
+  .main-screen .advantages-card:last-child {
+    margin-right: 1.5rem;
+  }
+
+  .introduction .wrapper {
+    padding: 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: none;
+  }
+  .introduction-content {
+    margin-bottom: 2rem;
+  }
+  .introduction-title {
+    padding: 0 16rem;
+    text-align: center;
+  }
+  .introduction-text {
+    padding-right: 0;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .work-principles {
+    max-height: none;
+  }
+  .work-principles .wrapper {
+    padding-bottom: 8rem;
+  }
+  .work-principles-slider {
+    position: relative;
+  }
+  .work-principles-slider .work-principl-img {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #work-principles-slider > button.slick-prev {
+    bottom: -12%;
+    left: 40%;
+  }
+
+  #work-principles-slider > button.slick-next {
+    bottom: -12%;
+    right: 40%;
+  }
+}
+@media (max-width: 1200px) {
+  .main-directions .wrapper,
+.work-principles .wrapper,
+.partner-reviews .wrapper,
+.clients .wrapper,
+.triangle .wrapper,
+.services .wrapper,
+.confidence-benefit .wrapper,
+.advantages-block2 .wrapper,
+.cooperation .wrapper,
+.service-cost .wrapper,
+.footer .wrapper {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main-directions .wrapper h2,
+.main-directions .wrapper h4,
+.work-principles .wrapper h2,
+.work-principles .wrapper h4,
+.partner-reviews .wrapper h2,
+.partner-reviews .wrapper h4,
+.clients .wrapper h2,
+.clients .wrapper h4,
+.triangle .wrapper h2,
+.triangle .wrapper h4,
+.services .wrapper h2,
+.services .wrapper h4,
+.confidence-benefit .wrapper h2,
+.confidence-benefit .wrapper h4,
+.advantages-block2 .wrapper h2,
+.advantages-block2 .wrapper h4,
+.cooperation .wrapper h2,
+.cooperation .wrapper h4,
+.service-cost .wrapper h2,
+.service-cost .wrapper h4,
+.footer .wrapper h2,
+.footer .wrapper h4 {
+    text-align: center;
+  }
+
+  .main-screen .carousel-item-content {
+    max-width: 48rem;
+  }
+
+  .main-directions-title {
+    text-align: center;
+  }
+  .main-directions-services {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .main-directions-services-card {
+    margin: 2rem;
+    margin-bottom: 3rem;
+  }
+  .main-directions-button {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .partner-reviews {
+    padding: 10rem 0 10.5rem 0;
+  }
+  .partner-reviews-slider {
+    margin-bottom: 6rem;
+  }
+  .partner-reviews-button {
+    display: block;
+    margin: 0 auto;
+  }
+
+  #partner-reviews-slider > button.slick-prev {
+    bottom: -4rem;
+    left: 40%;
+  }
+
+  #partner-reviews-slider > button.slick-next {
+    bottom: -3rem;
+    right: 40%;
+  }
+
+  .advantages-block2 .advantages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .advantages-block2 .advantages-card {
+    margin: 1.5rem;
+  }
+  .advantages-block2 .advantages-card:first-child {
+    margin-left: 1.5rem;
+  }
+  .advantages-block2 .advantages-card:last-child {
+    margin-right: 1.5rem;
+  }
+  .advantages-block2-text {
+    padding: 4rem 6rem 4.5rem 6rem;
+  }
+
+  .cooperation .wrapper {
+    text-align: left;
+  }
+  .cooperation-content {
+    margin: 0 1.5rem 3rem 1.5rem;
+  }
+  .cooperation-form {
+    margin: 0 1.5rem 0 1.5rem;
+  }
+
+  .service-cost-text {
+    margin: 0 auto 2.7rem;
+  }
+  .service-cost-button {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .clients-content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .clients-content-text {
+    margin: 0 5rem 5rem;
+  }
+  .clients-images {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .clients-images img {
+    margin: 0 5rem 5rem;
+  }
+
+  .services-container {
+    margin-bottom: 5rem;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 140px 140px 140px 140px 140px;
+    grid-template-columns: 370px 1fr 1fr 370px;
+    grid-gap: 3rem;
+  }
+  .services-container div {
+    padding: 2.5rem 3rem 0 10rem;
+  }
+  .services-container h5 {
+    font-size: 1.6rem;
+    text-align: left;
+  }
+  .services-container-item-1 {
+    box-shadow: inset 5.5rem 0 0 0 rgba(222, 195, 119, 0.4);
+  }
+  .services-container-item-2 {
+    box-shadow: inset 5.5rem 0 0 0 rgba(222, 195, 119, 0.4);
+  }
+  .services-container-item-3 {
+    box-shadow: inset 5.5rem 0 0 0 rgba(222, 195, 119, 0.75);
+  }
+  .services-container-item-4 {
+    box-shadow: inset 5.5rem 0 0 0 rgba(222, 195, 119, 0.75);
+  }
+  .services-container-item-5 {
+    box-shadow: inset 5.5rem 0 0 0 #DEC377;
+  }
+  .services-container-item-6 {
+    box-shadow: inset 5.5rem 0 0 0 #DEC377;
+  }
+  .services-container-item-7 {
+    box-shadow: inset 5.5rem 0 0 0 rgba(222, 195, 119, 0.75);
+  }
+  .services-container-item-8 {
+    box-shadow: inset 5.5rem 0 0 0 rgba(222, 195, 119, 0.75);
+  }
+  .services-container-item-9 {
+    box-shadow: inset 5.5rem 0 0 0 rgba(222, 195, 119, 0.4);
+  }
+  .services-container-item-10 {
+    box-shadow: inset 5.5rem 0 0 0 rgba(222, 195, 119, 0.4);
+  }
+  .services-describe {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .services-describe-text {
+    margin-bottom: 2.5rem;
+  }
+  .services-describe-button {
+    display: block;
+    margin: 0 2.5rem;
+  }
+
+  .confidence-benefit-content {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .confidence-benefit-content-left {
+    margin: 0 5rem;
+  }
+  .confidence-benefit-content-right {
+    text-align: left;
+  }
+
+  .footer-offices-content .address {
+    padding-right: 0;
+  }
+  .footer-social {
+    margin: 0 3rem 3rem;
+  }
+  .footer-offices {
+    margin: 0 3rem 3rem;
+  }
+  .footer-offices-content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-offices-content-1, .footer-offices-content-2, .footer-offices-content-3 {
+    margin: 0 2rem 3rem;
+  }
+  .footer-working-hours {
+    margin: 0 3rem 3rem;
+  }
+}
+@media (max-width: 1100px) {
+  .main-screen .carousel-item-content {
+    max-width: 46rem;
+  }
+
+  .main-screen .content-title {
+    font-size: 3.4rem;
+  }
+
+  .main-screen .content-subtitle {
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 1000px) {
+  .work-principles-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .work-principles-title {
+    margin: 0 0 3rem 0;
+  }
+
+  .clients-content-text {
+    text-align: center;
+  }
+
+  .triangle-bottom h4 {
+    margin: 0 7rem 0 0;
+  }
+  .triangle-bottom p {
+    max-width: 50rem;
+  }
+
+  .introduction-title {
+    padding: 0 8rem;
+  }
+
+  .services-container {
+    grid-template-rows: repeat(10, 140px);
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+  }
+  .services-container h5 {
+    margin: 0 0 3.5rem 0;
+  }
+  .services-container-item-5 h5 {
+    margin: 0 0 0.5rem 0;
+  }
+  .services-container-item-1 {
+    grid-column: 1/2;
+  }
+  .services-container-item-2 {
+    grid-column: 1/2;
+  }
+  .services-container-item-3 {
+    grid-column: 1/2;
+  }
+  .services-container-item-4 {
+    grid-column: 1/2;
+  }
+  .services-container-item-5 {
+    grid-column: 1/2;
+  }
+  .services-container-item-6 {
+    grid-column: 1/2;
+  }
+  .services-container-item-7 {
+    grid-column: 1/2;
+  }
+  .services-container-item-8 {
+    grid-column: 1/2;
+  }
+  .services-container-item-9 {
+    grid-column: 1/2;
+  }
+  .services-container-item-10 {
+    grid-column: 1/2;
+  }
+
+  .services-describe-text {
+    text-align: center;
+  }
+
+  .service-cost-text {
+    text-align: center;
+  }
+}
+@media (max-width: 950px) {
+  .main-screen .carousel-img {
+    width: 200%;
+    filter: grayscale(0.5) blur(7px);
+  }
+
+  .main-screen .carousel-item {
+    padding: 6rem 0;
+  }
+
+  .main-screen .carousel-item-content {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: 2px solid #FFFFFF;
+    padding: 2.5rem 3rem;
+    width: 70rem;
+  }
+
+  #main-slider {
+    height: 350px;
+  }
+}
+@media (max-width: 800px) {
+  .introduction-title {
+    padding: 0 4rem;
+  }
+
+  .triangle-top {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .triangle-top-left,
+.triangle-top-right {
+    margin: 0 1.5rem 2.5rem;
+  }
+
+  .triangle-top-left {
+    order: 1;
+  }
+}
+@media (max-width: 650px) {
+  #main-slider {
+    height: 400px;
+  }
+
+  .main-screen .carousel-img {
+    width: 300%;
+    filter: grayscale(0.5) blur(10px);
+  }
+
+  .main-screen .carousel-item {
+    padding: 7rem 0;
+  }
+
+  .main-screen .carousel-item-content {
+    padding: 2.5rem 1rem;
+  }
+
+  #main-slider > button.slick-next {
+    bottom: 5%;
+    left: 55%;
+  }
+
+  #main-slider > button.slick-prev {
+    bottom: 5%;
+    left: 40%;
+  }
+
+  .introduction-title {
+    padding: 0;
+  }
+
+  .cooperation-content, .cooperation-form {
+    max-width: 50rem;
+  }
+  .cooperation-form .contact-form-button {
+    display: block;
+    margin: 0 auto;
+    max-width: 30rem;
+  }
+
+  .partner-reviews-slider {
+    overflow: hidden;
+    padding-bottom: 4rem;
+  }
+
+  .partner-reviews-slider .partner-review-img {
+    width: 100%;
+  }
+
+  #work-principles-slider > button.slick-prev {
+    bottom: -20%;
+  }
+
+  #work-principles-slider > button.slick-next {
+    bottom: -20%;
+  }
+
+  .services-container {
+    grid-template-rows: repeat(10, 170px);
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+  }
+
+  .services-container-item-1 {
+    box-shadow: inset 3.5rem 0 0 0 rgba(222, 195, 119, 0.4);
+  }
+  .services-container-item-2 {
+    box-shadow: inset 3.5rem 0 0 0 rgba(222, 195, 119, 0.4);
+  }
+  .services-container-item-3 {
+    box-shadow: inset 3.5rem 0 0 0 rgba(222, 195, 119, 0.75);
+  }
+  .services-container-item-4 {
+    box-shadow: inset 3.5rem 0 0 0 rgba(222, 195, 119, 0.75);
+  }
+  .services-container-item-5 {
+    box-shadow: inset 3.5rem 0 0 0 #DEC377;
+  }
+  .services-container-item-6 {
+    box-shadow: inset 3.5rem 0 0 0 #DEC377;
+  }
+  .services-container-item-7 {
+    box-shadow: inset 3.5rem 0 0 0 rgba(222, 195, 119, 0.75);
+  }
+  .services-container-item-8 {
+    box-shadow: inset 3.5rem 0 0 0 rgba(222, 195, 119, 0.75);
+  }
+  .services-container-item-9 {
+    box-shadow: inset 3.5rem 0 0 0 rgba(222, 195, 119, 0.4);
+  }
+  .services-container-item-10 {
+    box-shadow: inset 3.5rem 0 0 0 rgba(222, 195, 119, 0.4);
+  }
+
+  .services-container div {
+    padding: 2.5rem 1.5rem 0 7rem;
+  }
+
+  .services-container h5 {
+    font-size: 1.4rem;
+    margin: 0 0 2rem 0;
+  }
+}
+@media (max-width: 550px) {
+  .main-screen .content-title {
+    font-size: 2.6rem;
+    margin-bottom: 1.5rem;
+    line-height: 3rem;
+  }
+
+  .main-screen .main-button {
+    width: 15rem;
+    height: 45px;
+    font-size: 1.3rem;
+  }
+
+  .main-screen .carousel-item-content {
+    max-width: 38rem;
+  }
+
+  .wrapper h2 {
+    font-size: 2.2rem;
+  }
+
+  .introduction-container-img > img {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .triangle-bottom {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .triangle-bottom h4 {
+    margin: 0;
+  }
+
+  .introduction-content {
+    padding: 3rem 3rem 3rem 3rem;
+  }
+}
+@media (max-width: 450px) {
+  .main-directions .wrapper,
+.work-principles .wrapper,
+.partner-reviews .wrapper,
+.clients .wrapper,
+.triangle .wrapper,
+.services .wrapper,
+.confidence-benefit .wrapper,
+.advantages-block2 .wrapper,
+.cooperation .wrapper,
+.service-cost .wrapper,
+.footer .wrapper {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .main-screen .carousel-img {
+    width: 400%;
+    filter: grayscale(0.5) blur(10px);
+  }
+
+  .main-screen .content-title {
+    font-size: 2.2rem;
+  }
+
+  .main-screen .main-button {
+    width: 15rem;
+    height: 45px;
+    font-size: 1.3rem;
+  }
+
+  .main-screen .carousel-item-content {
+    max-width: 28rem;
+  }
+
+  .clients .wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .work-principles .wrapper {
+    padding-bottom: 6rem;
+  }
+
+  .partner-reviews {
+    padding-top: 3rem;
+  }
+
+  .main-screen .advantages-card {
+    padding: 4rem 0 3rem;
+  }
+
+  .main-directions-services-card {
+    padding: 1.5rem 1.5rem 2.5rem 2.5rem;
+  }
+
+  .main-directions-services-card-content {
+    margin-right: 0;
+  }
+
+  .cooperation-content-list li:before {
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 0;
+  }
+
+  .cooperation-content-list li {
+    text-align: center;
+    padding-top: 9rem;
+    padding-left: 0;
+  }
+
+  .cooperation-form .contact-form-button {
+    max-width: 20rem;
+    font-size: 1rem;
+  }
+
+  .cooperation-content-text {
+    text-align: center;
+  }
+
+  #work-principles-slider > button.slick-prev {
+    height: 2rem;
+  }
+
+  #work-principles-slider > button.slick-next {
+    height: 2rem;
+  }
+
+  .confidence-benefit .wrapper {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .confidence-benefit-content-left,
+.confidence-benefit-content-right {
+    margin: 0 0.5rem;
+  }
+
+  .advantages-block2-text {
+    padding: 4rem 3rem 4.5rem 3rem;
+  }
+
+  .triangle-bottom,
+.triangle-top-left,
+.triangle-top-right {
+    padding: 3.5rem 3rem 4.5rem 3rem;
+  }
+
+  .partner-reviews-slider .partner-review-name {
+    font-size: 2rem;
+  }
+
+  .partner-reviews-slider .partner-review-content {
+    padding: 0 2rem 6.5rem 2rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
