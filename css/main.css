@@ -83,8 +83,9 @@ header .social_language-select-option {
 }
 header .social_eye {
   margin: 0 19.5rem 0 43.1rem;
+  outline: none;
 }
-header .social_eye-link {
+header .social_eye a {
   outline: none;
 }
 header .social_networks {
@@ -186,6 +187,7 @@ main {
   position: relative;
   width: 100%;
   overflow: hidden;
+  outline: none;
 }
 .main-screen .carousel-item-content {
   position: absolute;
@@ -230,6 +232,7 @@ main {
   background-color: #DEC377;
   border-radius: 0.2rem;
   border: 0;
+  outline: none;
 }
 .main-screen .main-button:hover {
   cursor: pointer;

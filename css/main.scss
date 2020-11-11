@@ -355,10 +355,11 @@ header {
 
         &_eye {
             margin: 0 19.5rem 0 43.1rem;
-            
-            &-link {
+            outline: none;
+            a {
                 outline: none;
             }
+           
         }
 
 
@@ -482,7 +483,7 @@ main {
             position: relative;
             width: 100%;
             overflow: hidden;
-
+            outline: none;
             &-content {
                 position: absolute;
                 top: 16rem;
@@ -494,8 +495,8 @@ main {
         }
 
         &-img {
-
             width: 100%;
+           
         }
 
     }
@@ -527,6 +528,7 @@ main {
         background-color: $accent;
         border-radius: 0.2rem;
         border: 0;
+        outline: none;
 
         &:hover {
             cursor: pointer;
