@@ -1593,8 +1593,6 @@ hr {
   font-size: 25px;
 }
 
-/* Slider */
-/* Dots */
 .slick-dotted.slick-slider {
   margin-bottom: 30px;
 }
@@ -1711,7 +1709,6 @@ header .navigation {
     margin: 0 auto;
   }
 
-  /* скрываем чекбокс */
   #menu-toggle {
     opacity: 0;
     position: fixed;
@@ -1719,12 +1716,9 @@ header .navigation {
     right: 55px;
   }
 
-  /* стилизуем кнопку */
   .menu-btn {
     display: flex;
-    /* используем flex для центрирования содержимого */
     align-items: center;
-    /* центрируем содержимое кнопки */
     position: fixed;
     top: 20px;
     right: 55px;
@@ -1734,7 +1728,6 @@ header .navigation {
     z-index: 1;
   }
 
-  /* добавляем "гамбургер" */
   .menu-btn > span,
 .menu-btn > span::before,
 .menu-btn > span::after {
