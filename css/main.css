@@ -49,7 +49,7 @@ header .social {
 header .social_language-lang {
   display: inline-block;
   margin-right: 0.8rem;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.6);
   font-family: "Source Sans Pro", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -58,7 +58,7 @@ header .social_language-lang {
 }
 header .social_language-select {
   display: inline-block;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.6);
   font-family: "Source Sans Pro", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -72,7 +72,7 @@ header .social_language-select:hover {
   cursor: pointer;
 }
 header .social_language-select-option {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.6);
   font-family: "Source Sans Pro", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -215,7 +215,7 @@ main {
   font-weight: 300;
   font-size: 1.5rem;
   line-height: 2.5rem;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.6);
   margin-bottom: 5rem;
 }
 .main-screen .main-button {
@@ -344,7 +344,7 @@ main {
   font-weight: 300;
   font-size: 1.5rem;
   line-height: 2.5rem;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.6);
 }
 .introduction-text-last {
   margin-bottom: 0;
@@ -469,7 +469,7 @@ main {
   font-weight: 300;
   font-size: 1.5rem;
   line-height: 2.5rem;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.6);
 }
 .work-principles-content p:first-child {
   margin-bottom: 2.5rem;
@@ -561,7 +561,7 @@ main {
   font-size: 1.4rem;
   line-height: 2.5rem;
   letter-spacing: 0.01em;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.6);
 }
 .partner-reviews-slider .partner-review-link {
   margin-bottom: 2rem;
@@ -632,7 +632,7 @@ main {
   font-weight: 300;
   font-size: 1.5rem;
   line-height: 2.5rem;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.6);
   max-width: 67rem;
 }
 .clients-content-button {
@@ -719,7 +719,7 @@ main {
   font-weight: 300;
   font-size: 1.5rem;
   line-height: 2.5rem;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.6);
 }
 .triangle-bottom {
   padding: 3.5rem 5rem 4.5rem 5rem;
@@ -745,7 +745,7 @@ main {
   font-weight: 300;
   font-size: 1.5rem;
   line-height: 2.5rem;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.6);
   max-width: 72rem;
 }
 
@@ -874,7 +874,7 @@ main {
   font-weight: 300;
   font-size: 1.5rem;
   line-height: 2.5rem;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.6);
 }
 .services-describe-button {
   width: 200px;
@@ -938,7 +938,7 @@ main {
   font-weight: 300;
   font-size: 1.5rem;
   line-height: 2.5rem;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.6);
 }
 .confidence-benefit-content .last-item {
   padding: 2.8rem 0 0 0;
@@ -1041,7 +1041,7 @@ main {
   font-weight: 300;
   font-size: 1.5rem;
   line-height: 2.5rem;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.6);
   position: relative;
 }
 .advantages-block2-text-rectangle {
@@ -1083,7 +1083,7 @@ main {
   font-weight: normal;
   font-size: 1.5rem;
   line-height: 2.5rem;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.6);
   padding-left: 9.8rem;
   position: relative;
 }
@@ -1107,7 +1107,7 @@ main {
   font-size: 1.4rem;
   line-height: 2.5rem;
   letter-spacing: 0.01em;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.6);
 }
 .cooperation-form {
   max-width: 57rem;
@@ -1216,7 +1216,7 @@ main {
   font-weight: 300;
   font-size: 1.5rem;
   line-height: 2.5rem;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.6);
 }
 .service-cost-button {
   width: 20rem;
@@ -1411,7 +1411,7 @@ hr {
   font-weight: 300;
   font-size: 1.3rem;
   line-height: 2rem;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.6);
 }
 .footer-offices-content-address {
   margin-bottom: 2rem;
@@ -1434,7 +1434,7 @@ hr {
   font-weight: 300;
   font-size: 1.3rem;
   line-height: 2rem;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.6);
 }
 .footer-offices-content .resident {
   display: block;
@@ -1447,7 +1447,7 @@ hr {
   font-size: 1.3rem;
   line-height: 2rem;
   font-weight: 600;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.6);
   text-decoration: none;
   outline: none;
 }
@@ -1481,7 +1481,7 @@ hr {
   font-size: 1.3rem;
   line-height: 2rem;
   line-height: 20px;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.6);
 }
 .footer .footer-copyrite {
   background-color: rgba(0, 0, 0, 0.1);
@@ -1493,7 +1493,7 @@ hr {
   font-size: 1.2rem;
   line-height: 2rem;
   letter-spacing: 0.02em;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 /* Slider */
